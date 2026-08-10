@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>AudioActivityDetector</AssemblyName>
+    <RootNamespace>AudioActivityDetector</RootNamespace>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <!-- This machine's Windows build/CPU doesn't fully support CET shadow
+         stacks, which makes the Roslyn compiler itself fail to launch.
+         Disabling CET compat for the build unblocks compilation; it has
+         no effect on this app's functionality. -->
+    <CETCompat>false</CETCompat>
+  </PropertyGroup>
+
+</Project>
